@@ -33,4 +33,5 @@ const calculator = {
 }
 
 const value = calculator.plus(2, 3);
-console.log(value)
+console.log(value);
+console.log()
