@@ -11,33 +11,43 @@
 	<script src="https://kit.fontawesome.com/f12304c118.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<!-- 사용자 등록 -->
-	<form id="login-form" class="hidden">
-		<input required maxlength="15" type="text" placeholder="What is your name?" />
-		<input type="submit" value="Log In" />
-	</form>
+	<div id="containor">
+		<!-- 날씨 영역 -->
+		<div id="weather">
+			<div>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="content">
+			<!-- 사용자 등록 -->
+			<form id="login-form" class="hidden">
+				<input required maxlength="15" type="text" placeholder="What is your name?" />
+				<input type="submit" value="Log In" />
+			</form>
+			
+			<!-- 시간 -->
+			<h2 id="clock">00:00</h2>
+			
+			<!-- 사용자 -->
+			<h1 class="hidden" id="greeting"></h1>
+		</div>
+		
+		<div class="footer">		
+			<!-- 명언 -->
+			<div id="quote">
+				<span></span>
+				<span></span>
+			</div>
 
-	<!-- To Do List -->
-	<form id="todo-form">
-		<input type="text" placeholder="Write a To Do and Press Enter">
-	</form>
-	<ul id="todo-list"></ul>
-
-	<!-- 시간 -->
-	<h2 id="clock">00:00</h2>
-	<!-- 사용자 -->
-	<h1 class="hidden" id="greeting"></h1>
-	<!-- 명언 -->
-	<div id="quote">
-		<span></span>
-		<br>
-		<span></span>
+			<!-- To Do List -->
+			<form id="todo-form">
+				<input type="text" placeholder="Write a To Do and Press Enter">
+			</form>
+			<ul id="todo-list"></ul>
+		</div>
 	</div>
-	<!-- 날씨 영역 -->
-	<div id="weather">
-		<span></span>
-		<span></span>
-	</div>
+	
 
 	<script src="./js/clock.js"></script>
 	<script src="./js/greetings.js"></script>

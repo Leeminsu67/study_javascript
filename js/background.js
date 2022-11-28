@@ -6,9 +6,12 @@ const images = [
 
 const choesenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.createElement("img");
+const containor = document.querySelector("#containor");
 
-bgImage.src = `img/${choesenImage}`;
+containor.style.backgroundImage = `url(img/${choesenImage})`;
 
-// document.body.appendChild(bgImage);
-document.body.prepend(bgImage);
+// const bgImage = document.createElement("img");
+// bgImage.src = `img/${choesenImage}`;
+
+// // document.body.appendChild(bgImage);
+// document.body.prepend(bgImage);

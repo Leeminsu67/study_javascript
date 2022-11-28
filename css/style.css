@@ -1,3 +1,58 @@
-.hidden{
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
 	display: none;
+}
+
+#containor{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	/* align-items: center; */
+}
+
+#weather{
+	width: 98%;
+	display: flex;
+	padding: 10px;
+	justify-content: flex-end;
+	font-weight: 700;
+	color: #fff;
+}
+
+
+.content{
+	margin-top: 10%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#clock{
+	font-size: 80px;
+	font-weight: 800;
+	color: #fff;
+}
+
+#greeting{
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.footer{
+	display: flex;
+	margin-top: 15%;
+	justify-content: center;
+}
+
+#quote{
+	color: #fff;
 }
